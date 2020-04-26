@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Subtitle } from '../../../styles/index'
-import { Container, Description, ImageContainer, Img, Tool, ImageItem } from './styles';
+import { Container, Description, Img, Tool, ImageItem } from './styles';
 
 export default ({ title, subtitle, img, tool, color }) => {
     return (
