@@ -22,6 +22,10 @@
     margin: 2px;
 }
 
+.selected-button:focus{
+    box-shadow: none;
+}
+
 button.select-button:hover {
     color: #ccc;
 }
