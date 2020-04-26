@@ -1,0 +1,61 @@
+.select-button-container {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 100px;
+    display: flex;
+}
+
+
+.selected-button {
+    background: #000000 !important;
+    border-radius: 100px;
+    color: #fff;
+}
+
+
+
+.select-button {
+    flex: .5;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    margin: 2px;
+}
+
+button.select-button:hover {
+    color: #ccc;
+}
+
+
+
+/*Telefones*/
+@media (min-width: 300px) {
+    .select-button-container {
+        margin-top: 10px;
+    }
+
+    .select-button {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .select-button-container {
+        margin-top: 0px;
+    }
+
+    .select-button {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 992px) {
+    .select-button-container {
+        margin-top: 0px;
+    }
+
+    .select-button {
+        font-size: 22px;
+    }
+
+}
