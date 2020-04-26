@@ -34,7 +34,7 @@ export default () => {
     return (
         <Container>
             {interfaces.map((item, key) =>
-                <img src={item.img} alt='image' key={key}/>
+                <img src={item.img} alt={`interface-${key}`} key={key} />
             )}
         </Container>
     );
