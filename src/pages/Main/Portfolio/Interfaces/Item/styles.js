@@ -7,16 +7,40 @@ export const ImageContainer = styled.div`
 
 export const Img = styled.img`
     @media (min-width: 300px) {
-        
+        height: 330px;
+        width: 300px
     }
 
     @media (min-width: 768px) {
-        height: 481px
+        height: 597px;
+        width: 597px;
+        align-self: center;
     }
 
 
     @media (min-width: 992px) {
-        height: 481px
+        height: 597px;
+        width: 597px;
+        align-self: center;
+    }
+`;
+
+export const ImgPocket = styled.img`
+    @media (min-width: 300px) {
+        height: 200px
+    }
+
+    @media (min-width: 768px) {
+        height: 597px;
+        width: 790px;
+        align-self: center;
+    }
+
+
+    @media (min-width: 992px) {
+        height: 597px;
+        width: 790px;
+        align-self: center;
     }
 `;
 
