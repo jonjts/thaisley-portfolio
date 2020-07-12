@@ -1,17 +1,18 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next'
+import Presentation from './Presentation'
 
 import Navbar from './Navbar';
+import Footer from './Footer'
 
 
 const Index: React.FC = () => {
 
-  const { t, i18n } = useTranslation()
 
   return (
     <>
       <Navbar />
-
+      <Presentation />
+      <Footer />
     </>
   );
 }

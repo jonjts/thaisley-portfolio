@@ -15,7 +15,7 @@ const languageStorage = '@thaisley-lang'
 const Index: React.FC = () => {
 
   const [lang, setLang] = useState('pt-br')
-  const [navSelected, setNavSelected] = useState('#home')
+  const [navSelected, setNavSelected] = useState<string | null>('#home')
   const { t, i18n } = useTranslation()
 
   useEffect(() => {
