@@ -1,6 +1,29 @@
 import styled from 'styled-components';
 import Button from 'react-bootstrap/Button'
 import RootCol from 'react-bootstrap/Col'
+import RootNav from 'react-bootstrap/Nav';
+
+export const Nav = styled(RootNav)`
+    
+    .nav-link{
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #fff !important;
+        letter-spacing: 0.5px;   
+    }
+
+    .active{
+        border-bottom: 1px #27AE60 solid ;
+    }
+
+    .navbar-nav{
+        flex: 1;
+        justify-content: center
+    }
+`
 
 export const ContactColumn = styled(RootCol)`
     @media (min-width:  768px) {
@@ -21,21 +44,26 @@ export const ContactColumn = styled(RootCol)`
 export const ContactButton = styled(Button)`
     border-radius: 50%;
     border: 1px solid #FFFFFF;
+
+    :hover{
+        background-color: #8ED0BD;
+        color: #242424
+    }
 `
 
 export const Container = styled.div`
     @media (min-width:  768px) {
         height: 381px;
+        margin-top: 120px;
     }
 
     @media (max-width: 768px) {
         height: 411px;
-        position: fixed;
+        margin-top: 50px
     }
 
     background-color: #242424;
     width: 100%;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     padding-bottom: 14px
@@ -98,7 +126,7 @@ export const ContactContainer = styled.div`
     @media (max-width: 768px) {
      
     }
-    margin-top: 58px;
+    margin-top: 32px;
     display: flex;
     justify-content: center
     

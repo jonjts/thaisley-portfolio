@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next'
+import {
+  useLocation
+} from "react-router-dom";
 
 import {
   Brand,
@@ -14,6 +17,7 @@ const languageStorage = '@thaisley-lang'
 
 const Index: React.FC = () => {
 
+  const location = useLocation()
   const [lang, setLang] = useState<string| undefined>(undefined)
   const [navSelected, setNavSelected] = useState<string | null>('#home')
   const { t, i18n } = useTranslation()
@@ -50,7 +54,7 @@ const Index: React.FC = () => {
         expand='lg'
         sticky='top'
       >
-        <Brand href="#home">T.</Brand>
+        <Brand href="/home">T.</Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav
@@ -58,11 +62,11 @@ const Index: React.FC = () => {
             activeKey={navSelected}
             onSelect={setNavSelected}
           >
-            <Nav.Link href="#home">{t('menu.home')}</Nav.Link>
+            <Nav.Link active={location.pathname == '/home'} href="/home">{t('menu.home')}</Nav.Link>
             <Dot />
-            <Nav.Link href="#about-me">{t('menu.about_me')}</Nav.Link>
+            <Nav.Link active={location.pathname == '/about-me'} href="/about-me">{t('menu.about_me')}</Nav.Link>
             <Dot />
-            <Nav.Link href="#contact">{t('menu.contact')}</Nav.Link>
+            <Nav.Link active={location.pathname == '/contact'} href="/contact">{t('menu.contact')}</Nav.Link>
           </Nav>
           <ToggleButtonGroup
             type="radio"

@@ -8,10 +8,11 @@ import {
 
 interface ISelectButton {
     onInterfacesCliecked(): void,
-    onIdentidadeClicked(): void
+    onIdentidadeClicked(): void,
+    onClick?(): void
 }
 
-const SelectButton: React.FC<ISelectButton> = ({ onInterfacesCliecked = () => { }, onIdentidadeClicked = () => { } }) => {
+const SelectButton: React.FC<ISelectButton> = ({ onInterfacesCliecked = () => { }, onIdentidadeClicked = () => { }, onClick }) => {
 
     const { t } = useTranslation()
     const [selected, setSelected] = useState('interface')
@@ -24,6 +25,7 @@ const SelectButton: React.FC<ISelectButton> = ({ onInterfacesCliecked = () => { 
 
 
     return (
+        <div onClick={onClick}>
             <ToggleButtonGroup
                 type="radio"
                 value={selected}
@@ -34,6 +36,7 @@ const SelectButton: React.FC<ISelectButton> = ({ onInterfacesCliecked = () => { 
                 <ToggleButton value='interface'>{t('label.interface')}</ToggleButton>
                 <ToggleButton value='visual'>{t('label.logo_desing')}</ToggleButton>
             </ToggleButtonGroup>
+        </div>
     );
 }
 

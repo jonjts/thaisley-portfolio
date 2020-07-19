@@ -18,3 +18,14 @@ export const S1 = styled.label`
     font-size: 24px;
     line-height: 150%;
 `
+
+export const Caption = styled.label`
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.4px;
+`

@@ -14,7 +14,7 @@ export const ToggleButtonGroup = styled(RootToggleButtonGroup)`
     box-sizing: border-box !important;
     border-radius: 100px !important;
     padding: 8px;
-    min-width: 382px;
+    min-width: 304px;
     
     .active{
       background-color: #242424 !important
@@ -34,9 +34,11 @@ export const ToggleButton = styled(RootToggleButton)`
     border-color: transparent;
     border-radius: 100px !important;
     color: #808080;
+    margin-right: 4px;
 
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    box-shadow: none !important;
 `
 
 export const Navbar = styled(RootNavbar)`

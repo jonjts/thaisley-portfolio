@@ -18,7 +18,7 @@ const Presentation: React.FC = () => {
 
     const { t } = useTranslation()
     return (
-        <Container>
+        <Container id='home'>
             <Quadrado src={quadradoSrc} />
             <Retangulo src={retanguloSrc} />
             <TitleContainer>

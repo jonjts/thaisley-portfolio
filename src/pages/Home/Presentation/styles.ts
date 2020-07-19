@@ -3,11 +3,14 @@ const quadradoSrc = require('../../../assets/images/quadrado.png')
 
 export const Container = styled.div`
 
-     @media (min-width:  576px) {
-        height: 500px; 
+    @media (min-width: 768px) {
+      height: 400px
     }
 
-    height: 100%;
+    @media (max-width: 768px) {
+        margin-bottom: 35px
+    }
+
     display: flex;
     justify-content: center;
     position: relative
@@ -89,7 +92,7 @@ export const TitleContainer = styled.div`
     }
 
     @media (max-width: 768px) {
-        margin-top: 14%;
+        margin-top: 35%;
     }
 
     display: flex;

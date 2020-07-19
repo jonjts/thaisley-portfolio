@@ -1,5 +1,7 @@
 import React from 'react';
-import Index from '../pages/Main'
+import Home from '../pages/Home'
+import AboutMe from '../pages/AboutMe'
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,8 +12,14 @@ const routes: React.FC = () => {
     return (
         <Router>
             <Switch>
-                <Route path="/">
-                    <Index />
+                <Route path="/" exact>
+                    <Home />
+                </Route>
+                <Route path="/home" exact>
+                    <Home />
+                </Route>
+                <Route path="/about-me">
+                    < AboutMe />
                 </Route>
             </Switch>
         </Router>

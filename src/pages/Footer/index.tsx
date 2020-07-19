@@ -1,5 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next'
+import {
+    useLocation
+  } from "react-router-dom";
 
 import {
     Container,
@@ -10,16 +13,18 @@ import {
     ContactContainer,
     ContactButton,
     Copyrigth,
-    ContactColumn
+    ContactColumn,
+    Nav
 } from './styles';
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 
 
-const ondasSrc = require('../../../assets/images/ondas.png')
+const ondasSrc = require('../../assets/images/ondas.png')
 
 const Footer: React.FC = () => {
 
+    const location = useLocation()
     const { t } = useTranslation()
 
     return (
@@ -29,16 +34,18 @@ const Footer: React.FC = () => {
                     <Ondas src={ondasSrc} />
                 </OndasContainer>
                 <NavContainer>
-                    <Button variant='link' href="#home">{t('menu.home')}</Button>
-                    <Dot />
-                    <Button variant='link' href="#about-me">{t('menu.about_me')}</Button>
-                    <Dot />
-                    <Button variant='link' href="#contact">{t('menu.contact')}</Button>
+                    <Nav>
+                        <Nav.Link active={location.pathname == '/home'} href="/home">{t('menu.home')}</Nav.Link>
+                        <Dot />
+                        <Nav.Link active={location.pathname == '/about-me'} href="/about-me">{t('menu.about_me')}</Nav.Link>
+                        <Dot />
+                        <Nav.Link active={location.pathname == '/contact'} href="/contact">{t('menu.contact')}</Nav.Link>
+                    </Nav>
                 </NavContainer>
                 <ContactContainer>
-                    <Row 
-                    className='align-items-center'
-                    style={{justifyContent: 'center'}}
+                    <Row
+                        className='align-items-center'
+                        style={{ justifyContent: 'center' }}
                     >
                         <ContactColumn
                             xs={6} sm={6} lg={2} md={2} xl={2}>
@@ -68,7 +75,7 @@ const Footer: React.FC = () => {
 
                 </ContactContainer>
                 <Copyrigth>
-                    {`© ${(new Date()).getFullYear()} • Casal de Desenvolvedores • Todos Direitos Reservados `}
+                    {`${(new Date()).getFullYear()} • Casal de Desenvolvedores`}
                 </Copyrigth>
             </Container>
 
