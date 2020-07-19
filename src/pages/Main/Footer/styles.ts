@@ -1,5 +1,22 @@
 import styled from 'styled-components';
 import Button from 'react-bootstrap/Button'
+import RootCol from 'react-bootstrap/Col'
+
+export const ContactColumn = styled(RootCol)`
+    @media (min-width:  768px) {
+        margin-right: 20px;
+    }
+
+    
+    @media (max-width: 768px) {
+        width: 40px
+    }
+
+    justify-content: center;
+    display: flex;
+    margin-bottom: 24px
+
+`
 
 export const ContactButton = styled(Button)`
     border-radius: 50%;
@@ -20,7 +37,8 @@ export const Container = styled.div`
     width: 100%;
     bottom: 0;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    padding-bottom: 14px
 
 `
 export const OndasContainer = styled.div`

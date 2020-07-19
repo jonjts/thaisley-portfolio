@@ -9,7 +9,8 @@ import {
     NavContainer,
     ContactContainer,
     ContactButton,
-    Copyrigth
+    Copyrigth,
+    ContactColumn
 } from './styles';
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
@@ -36,52 +37,34 @@ const Footer: React.FC = () => {
                     <Button variant='link' href="#contact">{t('menu.contact')}</Button>
                 </NavContainer>
                 <ContactContainer>
-                    <Row className='align-items-center'>
-                        <Col
-                            style={{ justifyContent: 'center', display: 'flex' }}
-                            className="mb-2"
-                            xs={4} sm={4} lg={2} md={2} xl={2}>
-                            <ContactButton>
+                    <Row 
+                    className='align-items-center'
+                    style={{justifyContent: 'center'}}
+                    >
+                        <ContactColumn
+                            xs={6} sm={6} lg={2} md={2} xl={2}>
+                            <ContactButton target='_blank' href='https://medium.com/@thaisley'>
                                 <i className="fab fa-medium-m"></i>
                             </ContactButton>
-                        </Col>
-                        <Col
-                            style={{ justifyContent: 'center', display: 'flex' }}
-                            className="mb-2"
-                            xs={4} sm={4} lg={2} md={2} xl={2}>
-                            <ContactButton>
-                                <i className="fab fa-behance"></i>
-                            </ContactButton>
-                        </Col>
-                        <Col
-                            style={{ justifyContent: 'center', display: 'flex' }}
-                            className="mb-2"
-                            xs={4} sm={4} lg={2} md={2} xl={2}>
-                            <ContactButton>
+                        </ContactColumn>
+                        <ContactColumn
+                            xs={6} sm={6} lg={2} md={2} xl={2}>
+                            <ContactButton target='_blank' href='https://dribbble.com/thaisley'>
                                 <i className="fab fa-dribbble"></i>
                             </ContactButton>
-                        </Col>
-                        <Col
-                            style={{ justifyContent: 'center', display: 'flex' }}
-                            xs={4} sm={4} lg={2} md={2} xl={2}>
-                            <ContactButton>
+                        </ContactColumn>
+                        <ContactColumn
+                            xs={6} sm={6} lg={2} md={2} xl={2}>
+                            <ContactButton target='_blank' href='https://www.linkedin.com/in/thaisley/'>
                                 <i className="fab fa-linkedin-in"></i>
                             </ContactButton>
-                        </Col>
-                        <Col
-                            style={{ justifyContent: 'center', display: 'flex' }}
-                            className='align-self-center' xs={4} sm={4} lg={2} md={2} xl={2}>
-                            <ContactButton>
+                        </ContactColumn>
+                        <ContactColumn
+                            xs={6} sm={6} lg={2} md={2} xl={2}>
+                            <ContactButton target='_blank' href='https://www.instagram.com/thaisley.designer/'>
                                 <i className="fab fa-instagram"></i>
                             </ContactButton>
-                        </Col>
-                        <Col
-                            style={{ justifyContent: 'center', display: 'flex' }}
-                            xs={4} sm={4} lg={2} md={2} xl={2}>
-                            <ContactButton>
-                                <i className="fab fa-whatsapp"></i>
-                            </ContactButton>
-                        </Col>
+                        </ContactColumn>
                     </Row>
 
                 </ContactContainer>
