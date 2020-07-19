@@ -14,7 +14,6 @@ import {
 } from './styles';
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 
 
 const ondasSrc = require('../../../assets/images/ondas.png')

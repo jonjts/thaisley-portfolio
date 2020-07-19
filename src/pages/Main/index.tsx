@@ -3,6 +3,7 @@ import Presentation from './Presentation'
 
 import Navbar from './Navbar';
 import Footer from './Footer'
+import Content from './Content'
 
 
 const Index: React.FC = () => {
@@ -12,6 +13,7 @@ const Index: React.FC = () => {
     <>
       <Navbar />
       <Presentation />
+      <Content />
       <Footer />
     </>
   );

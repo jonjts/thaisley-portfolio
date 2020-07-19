@@ -3,5 +3,8 @@
     "menu.about_me": "Sobre Mim",
     "menu.contact": "Contato",
     "main.title": "Oi, eu sou Thaisley",
-    "main.subtitle": "UI/UX Designer & Logo Designer"
+    "main.subtitle": "UI/UX Designer & Logo Designer",
+    "label.interface": "Interface",
+    "label.logo_desing": "Logo Design",
+    "label.show_me": "Me Mostre"
 }

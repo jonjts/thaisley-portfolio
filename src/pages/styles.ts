@@ -10,3 +10,11 @@ export const colors = {
 export const H1 = styled.h1`
 
 `
+
+export const S1 = styled.label`
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+`
