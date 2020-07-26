@@ -77,6 +77,7 @@ export const OndasContainer = styled.div`
     @media (max-width: 768px) {
         margin-top: -45px
     }
+
     display: flex;
     justify-content: center;
 `
@@ -89,6 +90,17 @@ export const NavContainer = styled.div`
 
     .btn-link{
         color: #fff
+    }
+
+    .nav-link{
+        @media (min-width:  768px) {
+            font-size: 18px
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px
+        }
+
     }
 `
 

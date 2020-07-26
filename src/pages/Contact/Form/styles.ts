@@ -50,13 +50,23 @@ export const Form = styled(RootForm)`
     @media (max-width: 768px) {
         
     }
+
+    justify-content: center !important;    
 `
 
 export const FormContainer = styled.div`
+    @media (min-width:  768px) {
+        justify-content: space-between
+    }
+
+    @media (max-width: 768px) {
+        justify-content: center
+    }
+
     flex: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
 `
 
 export const HeaderContainer = styled.div`
@@ -73,7 +83,8 @@ export const Quadrado = styled.img`
     }
 
     @media (max-width: 768px) {
-        visibility: hidden
+        visibility: hidden;
+        position: absolute;
     }
 
     height: 170px;
