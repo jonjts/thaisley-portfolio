@@ -11,6 +11,14 @@ export const H1 = styled.h1`
 
 `
 
+export const H2 = styled.h2`
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 36px;
+`
+
 export const S1 = styled.label`
     font-family: Lora;
     font-style: normal;

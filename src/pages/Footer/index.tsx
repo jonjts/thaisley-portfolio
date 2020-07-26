@@ -35,11 +35,11 @@ const Footer: React.FC = () => {
                 </OndasContainer>
                 <NavContainer>
                     <Nav>
-                        <Nav.Link active={location.pathname == '/home'} href="/home">{t('menu.home')}</Nav.Link>
+                        <Nav.Link active={location.pathname === '/home'} href="/home">{t('menu.home')}</Nav.Link>
                         <Dot />
-                        <Nav.Link active={location.pathname == '/about-me'} href="/about-me">{t('menu.about_me')}</Nav.Link>
+                        <Nav.Link active={location.pathname === '/about-me'} href="/about-me">{t('menu.about_me')}</Nav.Link>
                         <Dot />
-                        <Nav.Link active={location.pathname == '/contact'} href="/contact">{t('menu.contact')}</Nav.Link>
+                        <Nav.Link active={location.pathname === '/contact'} href="/contact">{t('menu.contact')}</Nav.Link>
                     </Nav>
                 </NavContainer>
                 <ContactContainer>

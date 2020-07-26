@@ -21,5 +21,11 @@
     "about_me.description1": "I am passionate about technology and I love solving problems, that's why I decided to start my studies in UX and UI Design.",
     "about_me.description2": "I currently work at a fintech as UI / UX Design. And I've been doing brand design for 5 years as a freelancer, which is exactly where it all started.",
     "about_me.description3": "Design is much more than aesthetics, it is helping people to solve problems. I would love to help solve yours :)",
-    "about_me.description_more": "You can see more where I went by looking at my likedin:"
+    "about_me.description_more": "You can see more where I went by looking at my likedin:",
+    "contact.title": "Contact",
+    "contact.send_email": "Send Email",
+    "contact.form.message": "Menssage",
+    "contact.form.name": "Name",
+    "contact.form.success_send": "Thanks for you contact",
+    "contact.form.error_send": "Ops, something was worng. Try again, please."
 }

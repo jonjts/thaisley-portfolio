@@ -21,5 +21,11 @@
     "about_me.description1": "Sou apaixonada por tecnologia e adoro resolver problemas, por causa disso que  resolvi a começar os estudos em UX e UI Design.",
     "about_me.description2": "Trabalho atualmente em uma fintech como UI/UX Design. E faço design de marcas a 5 anos como freelancer, que foi justamente onde tudo começou.",
     "about_me.description3": "Design é muito mais que estética, é ajudar pessoas a resolver os problemas. Gostaria muito de ajudar a resolver o seu :)",
-    "about_me.description_more": "Você pode ver mais por onde passei olhando meu likedin:"
+    "about_me.description_more": "Você pode ver mais por onde passei olhando meu likedin:",
+    "contact.title": "Contato",
+    "contact.send_email": "Enviar Email",
+    "contact.form.message": "Mensagem",
+    "contact.form.name": "Nome",
+    "contact.form.success_send": "Obrigado pelo seu contato",
+    "contact.form.error_send": "Ops, tivemos um problema. Tente de novo por favor."
 }
