@@ -6,6 +6,7 @@ const cors = require('cors')
 const baseDir = `${__dirname}/build/`;
 const port = process.env.PORT;
 
+
 const app = express(express.static(`${baseDir}`));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -13,6 +14,9 @@ app.use(bodyParser.raw());
 app.use(cors())
 app.use(express.static(`${baseDir}`));
 
+
+app.get("/assets/i18n/translations/pt-BR.json", (req, res) => res.sendFile("assets/i18n/translations/pt-BR.json", { root: baseDir }));
+app.get("/assets/i18n/translations/en.json", (req, res) => res.sendFile("assets/i18n/translations/en.json", { root: baseDir }));
 
 app.post('/send-email', async (req, res) => {
   const data = req.body
