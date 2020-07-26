@@ -4,6 +4,17 @@ import RootCol from 'react-bootstrap/Col'
 import RootNav from 'react-bootstrap/Nav';
 
 export const Nav = styled(RootNav)`
+    @media (min-width:  768px) {
+        flex-direction: row;
+    }
+
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px
+    }    
     
     .nav-link{
         font-family: Lora;
@@ -53,12 +64,12 @@ export const ContactButton = styled(Button)`
 
 export const Container = styled.div`
     @media (min-width:  768px) {
-        height: 381px;
+        min-height: 381px;
         margin-top: 120px;
     }
 
     @media (max-width: 768px) {
-        height: 411px;
+        min-height: 411px;
         margin-top: 50px
     }
 
@@ -98,7 +109,7 @@ export const NavContainer = styled.div`
         }
 
         @media (max-width: 768px) {
-            font-size: 16px
+            font-size: 16px;
         }
 
     }
@@ -157,6 +168,13 @@ export const Ondas = styled.img`
 `
 
 export const Dot = styled.div`
+    @media (min-width:  768px) {    
+        visibility: show;   
+    }
+
+    @media (max-width: 768px) {
+        visibility: hidden;
+    }
 
     height: 5px;
     width: 5px;

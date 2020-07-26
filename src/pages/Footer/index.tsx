@@ -16,7 +16,6 @@ import {
     ContactColumn,
     Nav
 } from './styles';
-import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 
 

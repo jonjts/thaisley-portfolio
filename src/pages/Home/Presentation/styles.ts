@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-const quadradoSrc = require('../../../assets/images/quadrado.png')
 
 export const Container = styled.div`
 

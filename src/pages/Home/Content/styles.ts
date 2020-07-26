@@ -40,6 +40,8 @@ export const CardContainer = styled.div`
     @media (max-width: 768px) {
         padding: 35px 24px 24px 24px;
     }
+
+    min-height: 600px;
  
 `
 

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import RootNavbar from 'react-bootstrap/Navbar'
-import RootButton from 'react-bootstrap/Button'
 import RootToggleButton from 'react-bootstrap/ToggleButton';
 import RootToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
 

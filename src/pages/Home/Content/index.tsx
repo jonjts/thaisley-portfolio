@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next'
 
 import Card from "../../../components/cards/Image";
@@ -9,7 +9,6 @@ import {
     CardColumn,
     CardRow
 } from './styles';
-import Row from 'react-bootstrap/Row'
 import { S1 } from '../../styles'
 
 import SelectButton from "../../../components/SelectButton";
