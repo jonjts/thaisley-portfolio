@@ -1,6 +1,7 @@
 {
   "name": "thaisley-portifolio",
-  "version": "0.1.0",
+  "version": "2.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@material-ui/icons": "^4.9.1",
