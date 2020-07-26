@@ -11,7 +11,9 @@ import {
     HeaderContainer,
     Form,
     SubmitButtom,
-    SubmitContainer
+    SubmitContainer,
+    ContactButton,
+    ContactButtonContainer,
 } from './styles';
 import {
     H2
@@ -55,7 +57,7 @@ const ContactForm: React.FC = () => {
         try {
             await axios.post(`${process.env.REACT_APP_BASE_URL}/send-email`,
                 {
-                    subject:`${name} <${email}>`,
+                    subject: `${name} <${email}>`,
                     body: `
                     Nome: ${name}
                     Email: ${email}
@@ -81,6 +83,10 @@ ${message}
         setSending(false)
         setTimeout(() => setAlert({} as IAlert), 8000)
 
+    }
+
+    function handleOpenEmail() {
+        window.location.href = "mailto:thaisley@live.com?subject=&body=";
     }
 
     function validForm(): boolean {
@@ -115,6 +121,25 @@ ${message}
                 <H2>
                     {t('contact.title')}
                 </H2>
+                <ContactButtonContainer>
+                    <ContactButton
+                        href='https://api.whatsapp.com/send?phone=5579999270150&text=Ol%C3%A1%2C%20vi%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto'
+                        target='_blank'
+                    >
+                        <i className="fab fa-whatsapp"></i>
+                    </ContactButton>
+                    <ContactButton
+                        href="https://t.me/thaisley"
+                        target='_blank'
+                    >
+                        <i className="fab fa-telegram-plane"></i>
+                    </ContactButton>
+                    <ContactButton
+                        onClick={handleOpenEmail}
+                    >
+                        <i className="far fa-envelope"></i>
+                    </ContactButton>
+                </ContactButtonContainer>
             </HeaderContainer>
             <FormContainer>
                 <Quadrado src={quadradoSrc} />

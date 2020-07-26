@@ -2,6 +2,21 @@ import styled from 'styled-components';
 import RootForm from 'react-bootstrap/Form'
 import RootButton from 'react-bootstrap/Button'
 
+export const ContactButton = styled(RootButton)`
+    background: #8ED0BD;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    margin-right: 20px;
+`
+
+export const ContactButtonContainer = styled.div`
+    display: flex;
+    justify-content: space-space-between;
+    flex: 1;
+    margin-top: 24px;
+    margin-bottom: 29px;
+`
+
 export const SubmitContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -70,10 +85,11 @@ export const FormContainer = styled.div`
 `
 
 export const HeaderContainer = styled.div`
-
+    flex: 1;
     display: flex;
-    flex-direction: row;
-    justify-content: center
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `
 
 
