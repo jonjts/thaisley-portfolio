@@ -55,7 +55,7 @@ export const Navbar = styled(RootNavbar)`
 
 export const Dot = styled.div`
 
-    @media (max-width: 576px) {
+    @media (max-width: 990px) {
         visibility: hidden
     }
 
