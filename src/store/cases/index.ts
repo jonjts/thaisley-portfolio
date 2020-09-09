@@ -1,0 +1,1 @@
+export { default as Coompras } from './Coompras'

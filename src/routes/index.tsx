@@ -2,6 +2,7 @@ import React from 'react';
 import Home from '../pages/Home'
 import AboutMe from '../pages/AboutMe'
 import Contact from '../pages/Contact'
+import Cases from "../pages/Case";
 
 import {
     BrowserRouter as Router,
@@ -26,6 +27,9 @@ const routes: React.FC = () => {
                 </Route>
                 <Route path="/contact">
                     < Contact />
+                </Route>
+                <Route path="/cases/:key" exact>
+                    <Cases />
                 </Route>
             </Switch>
         </Router>

@@ -13,7 +13,7 @@ interface IImage {
 const Image: React.FC<IImage> = ({ imageSorce, categoria, title, onClick }) => {
 
     return (
-        <Card >
+        <Card onClick={onClick}>
             <Card.Img variant="top" src={imageSorce} />
             <TextContainer>
                 <Caption>{categoria}</Caption>

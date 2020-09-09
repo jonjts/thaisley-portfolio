@@ -16,6 +16,7 @@
     "categoria.ux_ui_redesign": "UI/UX - Redesign",
     "categoria.app_design": "App Design",
     "categoria.estudo_redesign": "Redesign Study",
+    "categoria.case_study": "Case Study",
     "about_me.hello": "Hello",
     "about_me.my_name": "My Name is Thaisley",
     "about_me.description1": "I am passionate about technology and I love solving problems, that's why I decided to start my studies in UX and UI Design.",
@@ -27,5 +28,6 @@
     "contact.form.message": "Menssage",
     "contact.form.name": "Name",
     "contact.form.success_send": "Thanks for you contact",
-    "contact.form.error_send": "Ops, something was worng. Try again, please."
+    "contact.form.error_send": "Ops, something was worng. Try again, please.",
+    "cases.back": "Come back to home"
 }

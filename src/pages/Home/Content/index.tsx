@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next'
+import { useHistory } from "react-router-dom";
+import { interfaces, logos } from "../../../store";
 
 import Card from "../../../components/cards/Image";
 import {
@@ -16,6 +18,7 @@ import SelectButton from "../../../components/SelectButton";
 const Content: React.FC = () => {
 
     const { t } = useTranslation()
+    const history = useHistory()
     const [selected, setSelected] = useState('interfaces')
 
 
@@ -32,91 +35,40 @@ const Content: React.FC = () => {
         focus()
     }
 
-    const Identidades = ({ }) => (
+    const Identidades = () => (
         <CardRow>
-            <CardColumn xs={12} sm={12} md={12} lg={4}>
-                <Card
-                    imageSorce={require('../../../assets/images/identidades/rim.png')}
-                    categoria={t('categoria.nutricionista')}
-                    title='Claúdia Ribeiro'
-                    onClick={() => { }}
-                />
-            </CardColumn>
-            <CardColumn xs={12} sm={12} md={12} lg={4}>
-                <Card
-                    imageSorce={require('../../../assets/images/identidades/maison.png')}
-                    categoria={t('categoria.beleza')}
-                    title='Maison'
-                    onClick={() => { }}
-                />
-            </CardColumn>
-            <CardColumn xs={12} sm={12} md={12} lg={4}>
-                <Card
-                    imageSorce={require('../../../assets/images/identidades/vade.png')}
-                    categoria={t('categoria.direito')}
-                    title='Vade'
-                    onClick={() => { }}
-                />
-            </CardColumn>
-            <CardColumn xs={12} sm={12} md={12} lg={4}>
-                <Card
-                    imageSorce={require('../../../assets/images/identidades/kids.png')}
-                    categoria={t('categoria.loja_infantil')}
-                    title='Aquarela Kids'
-                    onClick={() => { }}
-                />
-            </CardColumn>
-            <CardColumn xs={12} sm={12} md={12} lg={4}>
-                <Card
-                    imageSorce={require('../../../assets/images/identidades/arquiteto.png')}
-                    categoria={t('categoria.arquitetura')}
-                    title='Rebeka Barros'
-                    onClick={() => { }}
-                />
-            </CardColumn>
-            <CardColumn xs={12} sm={12} md={12} lg={4}>
-                <Card
-                    imageSorce={require('../../../assets/images/identidades/conforfit.png')}
-                    categoria={t('categoria.app_sporte')}
-                    title='Conforfit'
-                    onClick={() => { }}
-                />
-            </CardColumn>
+            {
+                logos.map((logo, key) => (
+                    <CardColumn xs={12} sm={12} md={12} lg={4}>
+                        <Card
+                            imageSorce={logo.image}
+                            categoria={t(logo.categoria)}
+                            title={logo.title}
+                            onClick={() => { history.push(`/cases/${logo.id}`) }}
+                        />
+                    </CardColumn>
+                ))
+            }
         </CardRow>
     )
 
-    const Interfaces = ({ }) => (
+    const Interfaces = () => (
         <CardRow>
-            <CardColumn
-                xs={12} sm={12} md={12} lg={4}
-            >
-                <Card
-                    imageSorce={require('../../../assets/images/interfaces/tinbolt.png')}
-                    categoria={t('categoria.ux_ui_redesign')}
-                    title='Tinbolt'
-                    onClick={() => { }}
-                />
-            </CardColumn>
-            <CardColumn
-                xs={12} sm={12} md={12} lg={4}
-            >
-                <Card
-                    imageSorce={require('../../../assets/images/interfaces/imc.png')}
-                    categoria={t('categoria.app_design')}
-                    title='IMC Calculadora'
-                    onClick={() => { }}
-                />
-            </CardColumn>
-            <CardColumn
-                xs={12} sm={12} md={12} lg={4}
-            >
-                <Card
-                    imageSorce={require('../../../assets/images/interfaces/sara.png')}
-                    categoria={t('categoria.ux_ui_redesign')}
-                    title='SaraPlay'
-                    onClick={() => { }}
-                />
-            </CardColumn>
+            {
+                interfaces.map((item, key) => (
+                    <CardColumn
+                        xs={12} sm={12} md={12} lg={4}
+                        key={key}
+                    >
+                        <Card
+                            imageSorce={item.image}
+                            categoria={t(item.categoria)}
+                            title={item.title}
+                            onClick={() => { history.push(`/cases/${item.id}`) }}
+                        />
+                    </CardColumn>
+                ))
+            }
         </CardRow>
     )
 
