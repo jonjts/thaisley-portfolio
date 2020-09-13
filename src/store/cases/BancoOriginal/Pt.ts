@@ -1,6 +1,7 @@
 import { ICase } from '../interfaces'
 
 const pt_br: ICase = {
+    date: new Date('2020-08-01'),
     title: 'Banco original',
     description: '2020 . Ebac . Banco Original . Case Study',
     banner: require('../../../assets/images/cases/banco-original/banner.jpg'),

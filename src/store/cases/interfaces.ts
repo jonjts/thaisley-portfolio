@@ -19,7 +19,9 @@ export interface ICase {
     title: string,
     description: string,
     banner?: string,
-    sessions: Array<ISession>
+    sessions: Array<ISession>,
+    referencias?: Array<string>,
+    date?: Date
 }
 
 export interface ICaseGroup {

@@ -1,6 +1,7 @@
 import { ICase } from '../interfaces'
 
 const pt_br: ICase = {
+    date: new Date('2020-06-01'),
     title: 'Coompras',
     description: '2020 . Casal de Desenvolvedores . UI/UX Design',
     banner: require('../../../assets/images/cases/coompras/banner.jpg'),

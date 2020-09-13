@@ -37,14 +37,14 @@ export const interfaces: Array<IProject> = [
         categoria: 'categoria.ux_ui_redesign',
         title: 'Tinbolt',
         id: 'tinbolt',
-        ordem: 3
+        ordem: 4
     },
     {
         image: require('../assets/images/interfaces/banco-original.jpg'),
         categoria: 'categoria.case_study',
         title: 'Banco Orginal',
         id: 'banco-original',
-        ordem: 4
+        ordem: 3
     },
     {
         image: require('../assets/images/interfaces/sara.jpg'),

@@ -32,5 +32,6 @@
     "contact.form.name": "Nome",
     "contact.form.success_send": "Obrigado pelo seu contato",
     "contact.form.error_send": "Ops, tivemos um problema. Tente de novo por favor.",
-    "cases.back": "Voltar para home"
+    "cases.back": "Voltar para home",
+    "cases.reference": "Referências Bibliográficas"
 }
