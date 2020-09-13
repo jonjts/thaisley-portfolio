@@ -19,12 +19,15 @@ const Header: React.FC<{ caso: ICase }> = ({ caso }) => {
                     caso.description
                 }
             </caption>
-            <Banner
-                alt='Banner'
-                width={678}
-                height={238}
-                src={caso.banner}
-            />
+            {
+                caso?.banner &&
+                <Banner
+                    alt='Banner'
+                    width={678}
+                    height={238}
+                    src={caso?.banner}
+                />
+            }
         </Container>
     )
 }

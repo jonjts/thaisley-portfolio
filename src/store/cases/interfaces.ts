@@ -18,7 +18,7 @@ export interface ISession {
 export interface ICase {
     title: string,
     description: string,
-    banner: string,
+    banner?: string,
     sessions: Array<ISession>
 }
 

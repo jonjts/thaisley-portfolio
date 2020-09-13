@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next'
-import { Coompras, Tinbolt } from '../../../store/cases'
+import { Coompras, Tinbolt, Sara, Imc } from '../../../store/cases'
 import { ICaseGroup, ICase } from '../../../store/cases/interfaces'
 import {
     useHistory,
@@ -25,12 +25,16 @@ import {
 
 interface MyCases {
     coompras: ICaseGroup,
-    tinbolt: ICaseGroup
+    tinbolt: ICaseGroup,
+    'sara-play': ICaseGroup,
+    'imc-calculadora': ICaseGroup
 }
 
 const cases: MyCases = {
     coompras: Coompras,
-    tinbolt: Tinbolt
+    tinbolt: Tinbolt,
+    'sara-play': Sara,
+    'imc-calculadora': Imc
 }
 
 

@@ -35,6 +35,7 @@ export const Container = styled.div`
     /* Primária */
 
     color: #242424;
+    margin-bottom: 40px;
   }
 
   @media (max-width:  600px) {
@@ -53,7 +54,7 @@ export const Container = styled.div`
 export const Banner = styled.img`
     width: 678px;
     height: 238px;
-    margin: 80px 0 80px 0;
+    margin: 40px 0 80px 0;
 
      @media (max-width:  600px) {
       width: 334px;
