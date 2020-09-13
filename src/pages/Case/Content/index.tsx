@@ -49,8 +49,10 @@ const Content: React.FC = () => {
     const history = useHistory()
     const { t, i18n } = useTranslation()
     const [readToo, setReadToo] = useState(new Array<IProject>())
+    const [caso, setCase] = useState<undefined | ICase>(undefined)
 
     useEffect(() => {
+        loadCaso()
         loadNextToRead()
         scrollToTop()
     }, [])
@@ -60,7 +62,19 @@ const Content: React.FC = () => {
     }
 
     function loadNextToRead() {
-        setReadToo(interfaces.filter(item => item.id !== query.get('key')))
+        const key = query.get('key')
+        setReadToo(interfaces.filter(item => item.id !== key))
+    }
+
+    function loadCaso() {
+        const key = query.get('key')
+        if (!key) return
+
+        //@ts-ignore
+        const casoDeUso = cases[key]
+        if (casoDeUso) {
+            setCase(casoDeUso[i18n.language === 'en' ? 'en' : 'pt-br'] as ICase)
+        }
     }
 
     function scrollToTop() {
@@ -70,22 +84,29 @@ const Content: React.FC = () => {
     return (
         <Container>
             <ContenContainer>
-                <Article
-                    //@ts-ignore
-                    caso={cases[query.get('key')][i18n.language === 'en' ? 'en' : 'pt-br'] as ICase}
-                >
-                    <BackButton
-                        onClick={handleGoBack}
-                    >
-                        <img
-                            alt='back'
-                            src={require('../../../assets/images/icons/arrow-back.svg')}
-                        />
-                        <label>
-                            {t('cases.back')}
-                        </label>
-                    </BackButton>
-                </Article>
+                {
+                    !!caso ?
+                        <Article
+                            caso={caso}
+                        >
+                            <BackButton
+                                onClick={handleGoBack}
+                            >
+                                <img
+                                    alt='back'
+                                    src={require('../../../assets/images/icons/arrow-back.svg')}
+                                />
+                                <label>
+                                    {t('cases.back')}
+                                </label>
+                            </BackButton>
+                        </Article>
+                        :
+                        <>
+                        
+                        </>
+                }
+
             </ContenContainer>
             <ContactButtonContainer
                 style={{
