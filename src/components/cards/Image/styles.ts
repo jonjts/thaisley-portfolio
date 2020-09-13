@@ -29,8 +29,44 @@ export const Card = styled(RootCard) <{ opacity: number, cursor: string }>`
         transform: ${props => props.cursor === 'pointer' ? 'translate(0, -10px)' : ''} ;
     }
 
-    .card-img-top{
-        
+    .loading {
+        background-color: #E4E4E4;
+        color: #E4E4E4;
+
+        animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+        0%   {opacity: 1;}
+        25%  {opacity: 0.8;}
+        50%  {opacity: 0.7;}
+        75%  {opacity: 0.8;}
+        100% {opacity: 1;}
+}
+
+
+    .invisible {
+        display: none;
+    }
+
+    .gonne{
+        visibility: hidden;
+    }
+`
+
+export const Sinnher = styled.div`
+    width: 100%;
+    height: 75%;
+    z-index: 1;
+    position: absolute;
+    background-color: #E4E4E4;
+
+    @media (min-width:  500px) {
+        height: 75%;
+    }
+
+    @media (min-width: 1400px) {
+        height: 80%;
     }
 `
 

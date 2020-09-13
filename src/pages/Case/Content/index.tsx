@@ -81,6 +81,12 @@ const Content: React.FC = () => {
         window.scrollTo({ top: 0 });
     }
 
+    function goToNext(key: string) {
+        scrollToTop()
+        history.push(`/cases?key=${key}`)
+        window.location.reload()
+    }
+
     return (
         <Container>
             <ContenContainer>
@@ -103,7 +109,7 @@ const Content: React.FC = () => {
                         </Article>
                         :
                         <>
-                        
+
                         </>
                 }
 
@@ -135,7 +141,7 @@ const Content: React.FC = () => {
                         imageSorce={readToo[0]?.image}
                         categoria={t(readToo[0]?.categoria)}
                         title={readToo[0]?.title}
-                        onClick={() => { history.push(`/cases/${readToo[0]?.id}`) }}
+                        onClick={() => goToNext(readToo[0]?.id)}
                     />
                 </Col>
                 <Col>
@@ -143,7 +149,7 @@ const Content: React.FC = () => {
                         imageSorce={readToo[1]?.image}
                         categoria={t(readToo[1]?.categoria)}
                         title={readToo[1]?.title}
-                        onClick={() => { history.push(`/cases/${readToo[1]?.id}`) }}
+                        onClick={() => goToNext(readToo[1]?.id)}
                     />
                 </Col>
             </Row>

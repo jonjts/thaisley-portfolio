@@ -23,7 +23,7 @@ const pt_br: ICase = {
                 {
                     text: [
                         {
-                            value: `Primeiramente foi criado um Moodboard com as refências que poderia me auxiliar na contrução e realizado vários wireframe de baixa fidelidade no papel. `
+                            value: `Primeiramente foi criado um Moodboard com as referências que poderia me auxiliar na contrução e realizado vários wireframe de baixa fidelidade no papel. `
                         },
                     ]
                 },

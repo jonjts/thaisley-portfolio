@@ -2,7 +2,7 @@ import { ICase } from '../interfaces'
 
 const pt_br: ICase = {
     title: 'Coompras',
-    description: '2020 . Casal de Desenvolvedores',
+    description: '2020 . Casal de Desenvolvedores . UI/UX Design',
     banner: require('../../../assets/images/cases/coompras/banner.jpg'),
     sessions: [
         {
@@ -85,7 +85,28 @@ const pt_br: ICase = {
             ],
         },
         {
-            title: 'Extrevista com Usuário',
+            title: 'Pesquisa Quantitativa',
+            paragraphs: [
+                {
+                    text: [
+                        {
+                            value: 'Para ter conectar os dados adquiridos no Desk Reserach, fiz uma pesquisa no Google Forms que coloquei em grupos de WhatsApp rodando durante 1 semana, e durante esse tempo foi coletado 68 respostas.'
+                        },
+                        {
+                            value: 'Abaixo segue alguns resultados encontrados:'
+                        },
+                        {
+                            type: 'image',
+                            value: require('../../../assets/images/cases/coompras/charts-pesquisa.jpg'),
+                            width: 661,
+                            height: 1764
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            title: 'Extrevista de Profundidade',
             paragraphs: [
                 {
                     text: [
