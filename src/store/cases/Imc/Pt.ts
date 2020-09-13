@@ -18,14 +18,20 @@ const pt_br: ICase = {
                         {
                             type: 'image',
                             value: require('../../../assets/images/cases/imc/1.jpg'),
-                            width: 987,
-                            height: 417
+                            width: 437,
+                            height: 380
                         },
                         {
                             type: 'image',
                             value: require('../../../assets/images/cases/imc/2.jpg'),
-                            width: 732,
-                            height: 417
+                            width: 671,
+                            height: 380
+                        },
+                        {
+                            type: 'image',
+                            value: require('../../../assets/images/cases/imc/3.jpg'),
+                            width: 437,
+                            height: 380
                         }
                     ]
                 }

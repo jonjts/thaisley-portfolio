@@ -28,7 +28,7 @@ const routes: React.FC = () => {
                 <Route path="/contact">
                     < Contact />
                 </Route>
-                <Route path="/cases/:key" exact>
+                <Route path="/cases">
                     <Cases />
                 </Route>
             </Switch>

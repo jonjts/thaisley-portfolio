@@ -65,7 +65,7 @@ const Content: React.FC = () => {
                             imageSorce={item.image}
                             categoria={t(item.categoria)}
                             title={item.title}
-                            onClick={() => { history.push(`/cases/${item.id}`) }}
+                            onClick={() => { history.push(`/cases?key=${item.id}`) }}
                         />
                     </CardColumn>
                 ))

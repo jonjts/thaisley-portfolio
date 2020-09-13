@@ -28,7 +28,7 @@ const Index: React.FC = () => {
 
   useEffect(() => {
     if(lang) i18n.changeLanguage(lang)
-  }, [lang])
+  }, [lang, i18n])
 
   function handleLanguageChange(val: string) {
     localStorage.setItem(languageStorage, val)

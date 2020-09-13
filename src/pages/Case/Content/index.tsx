@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next'
-import { Coompras, Tinbolt, Sara, Imc } from '../../../store/cases'
+import { Coompras, Tinbolt, Sara, Imc, BancoOriginal } from '../../../store/cases'
 import { ICaseGroup, ICase } from '../../../store/cases/interfaces'
 import {
     useHistory,
-    useParams,
+    useLocation
 } from "react-router-dom";
 import { interfaces } from "../../../store";
 import { IProject } from "../../../store/Projects";
@@ -27,38 +27,47 @@ interface MyCases {
     coompras: ICaseGroup,
     tinbolt: ICaseGroup,
     'sara-play': ICaseGroup,
-    'imc-calculadora': ICaseGroup
+    'imc-calculadora': ICaseGroup,
+    'banco-original': ICaseGroup
 }
 
 const cases: MyCases = {
     coompras: Coompras,
     tinbolt: Tinbolt,
     'sara-play': Sara,
-    'imc-calculadora': Imc
+    'imc-calculadora': Imc,
+    'banco-original': BancoOriginal
 }
 
+function useQuery() {
+    return new URLSearchParams(useLocation().search);
+}
 
 const Content: React.FC = () => {
 
+    let query = useQuery();
     const history = useHistory()
-    const { key } = useParams<{ key: string }>()
     const { t, i18n } = useTranslation()
     const [readToo, setReadToo] = useState(new Array<IProject>())
 
     useEffect(() => {
-        setReadToo(interfaces.filter(item => item.id !== key))
-    }, [key])
+        loadNextToRead()
+    }, [])
 
     function handleGoBack(e: React.MouseEvent) {
         history.goBack()
     }
 
+    function loadNextToRead() {
+        setReadToo(interfaces.filter(item => item.id !== query.get('key')))
+    }
+    
     return (
         <Container>
             <ContenContainer>
                 <Article
                     //@ts-ignore
-                    caso={cases[key][i18n.language === 'en' ? 'en' : 'pt-br'] as ICase}
+                    caso={cases[query.get('key')][i18n.language === 'en' ? 'en' : 'pt-br'] as ICase}
                 >
                     <BackButton
                         onClick={handleGoBack}

@@ -18,6 +18,8 @@ app.use(express.static(`${baseDir}`));
 app.get("/assets/i18n/translations/pt-BR.json", (req, res) => res.sendFile("assets/i18n/translations/pt-br.json", { root: baseDir }));
 app.get("/assets/i18n/translations/en.json", (req, res) => res.sendFile("assets/i18n/translations/en.json", { root: baseDir }));
 
+app.get("*", (req, res) => res.sendFile("index.html", { root: baseDir }));
+
 app.post('/send-email', async (req, res) => {
   const data = req.body
 
@@ -38,7 +40,6 @@ app.post('/send-email', async (req, res) => {
 
 })
 
-app.get("*", (req, res) => res.sendFile("index.html", { root: baseDir }));
 
 app.listen(port ? port : 4000, () =>
   console.log(`Servidor subiu com sucesso em http://localhost:${port}`)
