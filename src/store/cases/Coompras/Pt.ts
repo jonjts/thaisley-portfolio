@@ -11,7 +11,7 @@ const pt_br: ICase = {
                 {
                     text: [
                         {
-                            value: `De acordo pesquisadas realizadas sobre irregularidades ao realizar compras, um dos problemas que mais acarreta o consumidor é a divergência de preço entre a gôndola e o caixa. Segundo Bruno Stroebel, supervisor de fiscalização da Fundação Procon-SP, “Muitas pessoas não percebem que estão pagando a mais, principalmente quando fazem compras grandes e quando é preciso ativar o desconto pelo aplicativo. Todos os dias os consumidores estão sendo lesados no bolso e isso não pode acontecer”.`
+                            value: `A empresa Growbit possui um projeto com o foco no desenvolvimento Humano e de suas individualidades, chamado Tinbolt. Ele funciona como uma rede social que permite a relação entre os mentores e aprendizes. Também possui gamificação, onde os mentores determina missões para seus aprendizes e gera pontos ao ser concluído para ser trocado por alguma recompensa determinada pelo mentor. `
                         },
                         {
                             value: `De acordo com dicas do Site Reclame Aqui fica inviável para o consumidor evitar de ser lesionado por não ser uma dica muito prática, e poderia apenas servir para pequenas compras: “Se sua compra não for grande, então tente decorar o valor dos produtos que está levando (ou uma média). Se algum sair muito do que você lembra, questione.”`
@@ -90,7 +90,7 @@ const pt_br: ICase = {
                 {
                     text: [
                         {
-                            value: 'Para ter conectar os dados adquiridos no Desk Reserach, fiz uma pesquisa no Google Forms que coloquei em grupos de WhatsApp rodando durante 1 semana, e durante esse tempo foi coletado 68 respostas.'
+                            value: 'Para conectar os dados adquiridos no Desk Reserach, fiz uma pesquisa no Google Forms que coloquei em grupos de WhatsApp rodando durante 1 semana, e durante esse tempo foi coletado 68 respostas.'
                         },
                         {
                             value: 'Abaixo segue alguns resultados encontrados:'
@@ -111,7 +111,7 @@ const pt_br: ICase = {
                 {
                     text: [
                         {
-                            value: `Foi realizada entrevista por chamada de voz com 5 pessoas para compreender o contexto para entender como eles agiam na realização de Compras em Supermercados.`
+                            value: `Foram realizadas entrevistas por chamadas de voz com 5 pessoas para compreender o contexto com o qual eles agiam na realização de compras em Supermercados.`
                         }
                     ],
                 },

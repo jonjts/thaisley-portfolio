@@ -23,7 +23,7 @@ const pt_br: ICase = {
                 {
                     text: [
                         {
-                            value: `Para entender o problema levantei algumas perguntas para realizar uym Desk Reserch e compreender mais afundo sobre o tema.`
+                            value: `Para entender o problema levantei algumas perguntas para realizar um Desk Research e compreender mais afundo sobre o tema.`
                         },
                         {
                             value: `•   Quais Tipos de Empréstimo?`
