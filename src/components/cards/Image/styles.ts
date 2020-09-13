@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import RootCard from 'react-bootstrap/Card'
 
-export const Card = styled(RootCard)`
+export const Card = styled(RootCard) <{ opacity: number, cursor: string }>`
 
-
+    cursor: ${props => props.cursor};
+    
     @media (min-width:  1111px) {
         width: auto;
         
@@ -22,6 +23,10 @@ export const Card = styled(RootCard)`
     border-radius: 10px 10px 10px 10px;
     border-color: transparent;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+
+    :hover{
+        opacity: ${props => props.opacity};
+    }
 
     .card-img-top{
         

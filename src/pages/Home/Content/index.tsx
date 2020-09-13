@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useHistory } from "react-router-dom";
 import { interfaces, logos } from "../../../store";
 
+import ContactButtonContainer from '../../../components/container/ContactButton'
 import Card from "../../../components/cards/Image";
 import {
     Container,
@@ -39,7 +40,7 @@ const Content: React.FC = () => {
         <CardRow>
             {
                 logos.map((logo, key) => (
-                    <CardColumn xs={12} sm={12} md={12} lg={4}>
+                    <CardColumn key={key} xs={12} sm={12} md={12} lg={4}>
                         <Card
                             imageSorce={logo.image}
                             categoria={t(logo.categoria)}
@@ -93,6 +94,9 @@ const Content: React.FC = () => {
                         <Identidades />
                 }
             </CardContainer>
+            <ContactButtonContainer
+                style={{ marginBottom: 113 }}
+            />
         </Container>
     )
 }

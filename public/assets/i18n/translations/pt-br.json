@@ -1,4 +1,7 @@
 {
+    "see_more": "Veja Mais",
+    "did_you_like": "Você Gostou?",
+    "contact_me": "Contate me",
     "menu.home": "Home",
     "menu.about_me": "Sobre Mim",
     "menu.contact": "Contato",
@@ -16,7 +19,7 @@
     "categoria.ux_ui_redesign": "UI/UX - Redesign",
     "categoria.app_design": "App Design",
     "categoria.estudo_redesign": "Estudo de Redesign",
-    "categoria.case_study": "Caso de Estudo",
+    "categoria.case_study": "Estudo de Caso",
     "about_me.hello": "Olá",
     "about_me.my_name": "Meu nome é Thaisley",
     "about_me.description1": "Sou apaixonada por tecnologia e adoro resolver problemas, por causa disso que  resolvi a começar os estudos em UX e UI Design.",

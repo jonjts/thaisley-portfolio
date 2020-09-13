@@ -19,7 +19,7 @@ i18n
     keySeparator: false,
     interpolation: {
       escapeValue: false,
-      formatSeparator: ','
+      //formatSeparator: ','
     },
     react: {
       wait: true

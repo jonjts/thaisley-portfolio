@@ -4,6 +4,7 @@ import * as serviceWorker from './serviceWorker';
 import './i18n'
 import Routes from "./routes";
 
+import { GlobalStyle } from "./styles";
 import './App.scss';
 
 
@@ -12,6 +13,7 @@ ReactDOM.render(
     <Suspense fallback={null}>
       <Routes />
     </Suspense>
+    <GlobalStyle />
   </React.StrictMode>,
   document.getElementById('root')
 );
