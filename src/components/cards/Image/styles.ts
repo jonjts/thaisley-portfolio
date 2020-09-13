@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import RootCard from 'react-bootstrap/Card'
 
 export const Card = styled(RootCard) <{ opacity: number, cursor: string }>`
-
+    transition: 0.3s;
     cursor: ${props => props.cursor};
     
     @media (min-width:  1111px) {
@@ -26,6 +26,7 @@ export const Card = styled(RootCard) <{ opacity: number, cursor: string }>`
 
     :hover{
         opacity: ${props => props.opacity};
+        transform: ${props => props.cursor === 'pointer' ? 'translate(0, -10px)' : ''} ;
     }
 
     .card-img-top{

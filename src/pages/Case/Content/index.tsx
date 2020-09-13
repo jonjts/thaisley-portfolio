@@ -52,6 +52,7 @@ const Content: React.FC = () => {
 
     useEffect(() => {
         loadNextToRead()
+        scrollToTop()
     }, [])
 
     function handleGoBack(e: React.MouseEvent) {
@@ -61,7 +62,11 @@ const Content: React.FC = () => {
     function loadNextToRead() {
         setReadToo(interfaces.filter(item => item.id !== query.get('key')))
     }
-    
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0 });
+    }
+
     return (
         <Container>
             <ContenContainer>

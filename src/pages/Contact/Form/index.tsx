@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next'
 import axios from "axios";
 
@@ -33,7 +33,7 @@ interface IAlert {
     color: string
 }
 
-console.log(process.env)
+
 const ContactForm: React.FC = () => {
 
     const { t } = useTranslation()
@@ -45,6 +45,10 @@ const ContactForm: React.FC = () => {
 
     const [error, setError] = useState<IError>({} as IError)
     const [alert, setAlert] = useState<IAlert>({} as IAlert)
+
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, [])
 
     async function handleSendEmail(): Promise<void> {
         if (validForm()) {

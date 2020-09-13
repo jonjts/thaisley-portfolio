@@ -45,7 +45,6 @@ const Content: React.FC = () => {
                             imageSorce={logo.image}
                             categoria={t(logo.categoria)}
                             title={logo.title}
-                            onClick={() => { history.push(`/cases/${logo.id}`) }}
                         />
                     </CardColumn>
                 ))

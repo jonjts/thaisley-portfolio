@@ -7,7 +7,7 @@ interface IImage {
     imageSorce: string,
     categoria: string,
     title: string,
-    onClick(): void
+    onClick?(): void
 }
 
 const Image: React.FC<IImage> = ({ imageSorce, categoria, title, onClick }) => {
