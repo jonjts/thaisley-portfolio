@@ -20,21 +20,21 @@ function compareTo(a: IProject, b: IProject) {
 export const interfaces: Array<IProject> = [
     {
         image: require('../assets/images/interfaces/coompras.jpg'),
-        categoria: 'categoria.app_design',
+        categoria: 'categoria.ux_ui_design',
         title: 'Coompras',
         id: 'coompras',
         ordem: 1
     },
     {
         image: require('../assets/images/interfaces/dr-ana.jpg'),
-        categoria: 'categoria.app_design',
+        categoria: 'categoria.visual_design',
         title: 'Dra Ana Emília',
         id: 'dr-ana',
         ordem: 2
     },
     {
         image: require('../assets/images/interfaces/tinbolt.jpg'),
-        categoria: 'categoria.ux_ui_redesign',
+        categoria: 'categoria.redesign',
         title: 'Tinbolt',
         id: 'tinbolt',
         ordem: 4
@@ -48,14 +48,14 @@ export const interfaces: Array<IProject> = [
     },
     {
         image: require('../assets/images/interfaces/sara.jpg'),
-        categoria: 'categoria.ux_ui_redesign',
+        categoria: 'categoria.redesign',
         title: 'SaraPlay',
         id: 'sara-play',
         ordem: 6
     },
     {
         image: require('../assets/images/interfaces/imc.jpg'),
-        categoria: 'categoria.app_design',
+        categoria: 'categoria.visual_design',
         title: 'IMC Calculadora',
         id: 'imc-calculadora',
         ordem: 5
