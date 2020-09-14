@@ -21,6 +21,10 @@ export const Container = styled.div`
     color: #242424;
 
     margin-bottom: 40px;
+
+    @media (max-width:  600px) {
+      font-size: 22px;
+    }
   }
 `;
 
@@ -49,6 +53,12 @@ export const LinkContainer = styled.div`
         letter-spacing: 0.5px;
         
         color: #242424;
+
+
+        @media (max-width:  600px) {
+          font-size: 12px;
+        }
+
 
     }
 `

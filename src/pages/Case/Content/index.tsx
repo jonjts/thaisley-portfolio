@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next'
-import { Coompras, Tinbolt, Sara, Imc, BancoOriginal } from '../../../store/cases'
+import { Coompras, Tinbolt, Sara, Imc, BancoOriginal, DrAna } from '../../../store/cases'
 import { ICaseGroup, ICase } from '../../../store/cases/interfaces'
 import {
     useHistory,
@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 import { interfaces } from "../../../store";
 import { IProject } from "../../../store/Projects";
-
 
 import ContactButtonContainer from '../../../components/container/ContactButton'
 import { Row, Col } from 'react-bootstrap'
@@ -28,7 +27,8 @@ interface MyCases {
     tinbolt: ICaseGroup,
     'sara-play': ICaseGroup,
     'imc-calculadora': ICaseGroup,
-    'banco-original': ICaseGroup
+    'banco-original': ICaseGroup,
+    'dr-ana': ICaseGroup
 }
 
 const cases: MyCases = {
@@ -36,8 +36,10 @@ const cases: MyCases = {
     tinbolt: Tinbolt,
     'sara-play': Sara,
     'imc-calculadora': Imc,
-    'banco-original': BancoOriginal
+    'banco-original': BancoOriginal,
+    'dr-ana': DrAna
 }
+
 
 function useQuery() {
     return new URLSearchParams(useLocation().search);

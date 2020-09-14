@@ -1,5 +1,5 @@
 export interface Text {
-    type?: 'text' | 'image',
+    type?: 'text' | 'image' | 'link',
     value: string,
     width?: number,
     height?: number
@@ -24,9 +24,10 @@ export interface ICase {
     date?: Date
 }
 
+
 export interface ICaseGroup {
     'pt-br': ICase,
     en: ICase
 }
 
-export enum Lang { 'pt-br', 'en'}
+export enum Lang { 'pt-br', 'en' }

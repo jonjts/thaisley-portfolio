@@ -30,10 +30,20 @@ const Session: React.FC<{ session: ISession }> = ({ session }) => {
                                         alt='detalhe'
                                         src={item.value}
                                     />
-                                    :
-                                    <p key={key}>
-                                        {item.value}
-                                    </p>
+                                    : item?.type === 'link' ?
+                                        <a
+                                            className='mt-4 mb-4'
+                                            href={item.value}
+                                            target='_blank'
+                                            rel="noopener noreferrer"
+                                        >
+                                            <i className="fas fa-link mr-2"></i>
+                                            {item.value}
+                                        </a >
+                                        :
+                                        <p key={key}>
+                                            {item.value}
+                                        </p>
                             ))
                         }
                     </Content>
