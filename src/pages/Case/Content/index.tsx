@@ -60,7 +60,7 @@ const Content: React.FC = () => {
     }, [])
 
     function handleGoBack(e: React.MouseEvent) {
-        history.goBack()
+        history.push('/home')
     }
 
     function loadNextToRead() {
