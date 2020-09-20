@@ -30,21 +30,21 @@ export const interfaces: Array<IProject> = [
         categoria: 'categoria.visual_design',
         title: 'Dra Ana Emília',
         id: 'dr-ana',
-        ordem: 2
+        ordem: 4
     },
     {
         image: require('../assets/images/interfaces/tinbolt.jpg'),
         categoria: 'categoria.redesign',
         title: 'Tinbolt',
         id: 'tinbolt',
-        ordem: 4
+        ordem: 3
     },
     {
         image: require('../assets/images/interfaces/banco-original.jpg'),
         categoria: 'categoria.case_study',
         title: 'Banco Original',
         id: 'banco-original',
-        ordem: 3
+        ordem: 2
     },
     {
         image: require('../assets/images/interfaces/sara.jpg'),
