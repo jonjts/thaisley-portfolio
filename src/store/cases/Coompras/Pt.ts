@@ -12,7 +12,7 @@ const pt_br: ICase = {
                 {
                     text: [
                         {
-                            value: `A empresa Growbit possui um projeto com o foco no desenvolvimento Humano e de suas individualidades, chamado Tinbolt. Ele funciona como uma rede social que permite a relação entre os mentores e aprendizes. Também possui gamificação, onde os mentores determina missões para seus aprendizes e gera pontos ao ser concluído para ser trocado por alguma recompensa determinada pelo mentor. `
+                            value: `De acordo com pesquisas realizadas sobre irregularidades ao realizar compras, um dos problemas que mais acarretam o consumidor é a divergência de preço entre a gôndola e o caixa. Segundo Bruno Stroebel, supervisor de fiscalização da Fundação Procon-SP, “Muitas pessoas não percebem que estão pagando a mais, principalmente quando fazem compras grandes e quando é preciso ativar o desconto pelo aplicativo. Todos os dias os consumidores estão sendo lesados no bolso e isso não pode acontecer”.`
                         },
                         {
                             value: `De acordo com dicas do Site Reclame Aqui fica inviável para o consumidor evitar de ser lesionado por não ser uma dica muito prática, e poderia apenas servir para pequenas compras: “Se sua compra não for grande, então tente decorar o valor dos produtos que está levando (ou uma média). Se algum sair muito do que você lembra, questione.”`

@@ -42,7 +42,7 @@ export const interfaces: Array<IProject> = [
     {
         image: require('../assets/images/interfaces/banco-original.jpg'),
         categoria: 'categoria.case_study',
-        title: 'Banco Orginal',
+        title: 'Banco Original',
         id: 'banco-original',
         ordem: 3
     },
