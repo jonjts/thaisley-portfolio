@@ -127,18 +127,25 @@ ${message}
                 </H2>
                 <ContactButtonContainer>
                     <ContactButton
+                    role='button'
+                    className='btn btn-primary'
                         href='https://api.whatsapp.com/send?phone=5579999270150&text=Ol%C3%A1%2C%20vi%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto'
                         target='_blank'
                     >
                         <i className="fab fa-whatsapp"></i>
                     </ContactButton>
                     <ContactButton
+                     role='button'
+                     className='btn btn-primary'
                         href="https://t.me/thaisley"
                         target='_blank'
                     >
                         <i className="fab fa-telegram-plane"></i>
                     </ContactButton>
                     <ContactButton
+                     role='button'
+                     href='#'
+                     className='btn btn-primary'
                         onClick={handleOpenEmail}
                     >
                         <i className="far fa-envelope"></i>
@@ -176,6 +183,7 @@ ${message}
                     </Form.Group>
                     <SubmitContainer>
                         <SubmitButtom
+                        className='btn btn-primary'
                             disabled={sending}
                             onClick={handleSendEmail}>
                             {

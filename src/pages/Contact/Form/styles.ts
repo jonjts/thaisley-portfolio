@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import RootForm from 'react-bootstrap/Form'
-import RootButton from 'react-bootstrap/Button'
 
-export const ContactButton = styled(RootButton)`
+export const ContactButton = styled.a`
     background: #8ED0BD;
     border-radius: 50%;
     border: 1px solid #FFFFFF;
@@ -25,7 +24,7 @@ export const SubmitContainer = styled.div`
     padding-top: 48px;
 `
 
-export const SubmitButtom = styled(RootButton)`
+export const SubmitButtom = styled.button`
     border: 1px solid #242424;
     box-sizing: border-box;
     border-radius: 50px;
