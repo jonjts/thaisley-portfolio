@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import Button from 'react-bootstrap/Button'
 
-export const LinkedinButton = styled(Button)`
+export const LinkedinButton = styled.a`
+    padding: 4px;
     border: 1px solid #8ED0BD;
     box-sizing: border-box;
-    border-radius: 50px;
+    border: none;
     width: 187px;
     height: 37px;
     background-color: transparent;

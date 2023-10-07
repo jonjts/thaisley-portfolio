@@ -19,7 +19,7 @@ const Index: React.FC = () => {
 
   const location = useLocation()
   const [lang, setLang] = useState<string| undefined>(undefined)
-  const [navSelected, setNavSelected] = useState<string | null>('#home')
+  const [navSelected, setNavSelected] = useState<string|undefined>('#home')
   const { t, i18n } = useTranslation()
 
   useEffect(() => {
@@ -60,7 +60,7 @@ const Index: React.FC = () => {
           <Nav
             className="mr-auto"
             activeKey={navSelected}
-            onSelect={setNavSelected}
+            onSelect={e => setNavSelected(e ?? undefined)}
           >
             <Nav.Link active={location.pathname === '/home'} href="/home">{t('menu.home')}</Nav.Link>
             <Dot />
@@ -75,8 +75,8 @@ const Index: React.FC = () => {
             onChange={handleLanguageChange}
             className="mb-2">
 
-            <ToggleButton value='en'>EN</ToggleButton>
-            <ToggleButton value='pt-br'>PT</ToggleButton>
+            <ToggleButton id='en' value='en'>EN</ToggleButton>
+            <ToggleButton id='pt-br' value='pt-br'>PT</ToggleButton>
           </ToggleButtonGroup>
         </Navbar.Collapse>
       </Navbar>

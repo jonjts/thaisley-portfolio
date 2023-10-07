@@ -48,7 +48,12 @@ export const Content = styled.div`
     flex-direction: column;
 `
 
-export const ImageContent = styled.img<{ width: number, height: number }>`
+interface ImageContentProps {
+    width: number,
+    height: number
+}
+
+export const ImageContent = styled.img<ImageContentProps>`
     width: ${props => `${props.width}px`};
     height: ${props => `${props.height}px`};
     align-self: center;

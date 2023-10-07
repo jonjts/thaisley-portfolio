@@ -10,7 +10,8 @@ import Session from './Session'
 import Referencias from "./Referencias";
 
 interface IArticle {
-    caso: ICase
+    caso: ICase,
+    children: React.ReactNode
 }
 
 const Article: React.FC<IArticle> = ({ caso, children }) => {

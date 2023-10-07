@@ -1,5 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next'
+import  ContactButton from 'react-bootstrap/Button'
+
 import {
     useLocation
   } from "react-router-dom";
@@ -11,7 +13,7 @@ import {
     Dot,
     NavContainer,
     ContactContainer,
-    ContactButton,
+    // ContactButton,
     Copyrigth,
     ContactColumn,
     Nav
@@ -44,29 +46,27 @@ const Footer: React.FC = () => {
                 <ContactContainer>
                     <Row
                         className='align-items-center'
-                        style={{ justifyContent: 'center' }}
+                        style={{ justifyContent: 'center', gap: '32px' }}
+                          
                     >
-                        <ContactColumn
-                            xs={6} sm={6} lg={2} md={2} xl={2}>
-                            <ContactButton target='_blank' href='https://medium.com/@thaisley'>
+                        <ContactColumn >
+                            <ContactButton target='_blank' href='https://medium.com/@thaisley'
+                             >
                                 <i className="fab fa-medium-m"></i>
                             </ContactButton>
                         </ContactColumn>
-                        <ContactColumn
-                            xs={6} sm={6} lg={2} md={2} xl={2}>
+                        <ContactColumn >
                             <ContactButton target='_blank' href='https://dribbble.com/thaisley'>
                                 <i className="fab fa-dribbble"></i>
                             </ContactButton>
                         </ContactColumn>
-                        <ContactColumn
-                            xs={6} sm={6} lg={2} md={2} xl={2}>
+                        <ContactColumn >
                             <ContactButton target='_blank' href='https://www.linkedin.com/in/thaisley/'>
                                 <i className="fab fa-linkedin-in"></i>
                             </ContactButton>
                         </ContactColumn>
-                        <ContactColumn
-                            xs={6} sm={6} lg={2} md={2} xl={2}>
-                            <ContactButton target='_blank' href='https://www.instagram.com/thaisley.designer/'>
+                        <ContactColumn>
+                            <ContactButton  target='_blank' href='https://www.instagram.com/thaisley.designer/'>
                                 <i className="fab fa-instagram"></i>
                             </ContactButton>
                         </ContactColumn>

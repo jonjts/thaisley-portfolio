@@ -38,26 +38,27 @@ export const Nav = styled(RootNav)`
 
 export const ContactColumn = styled(RootCol)`
     @media (min-width:  768px) {
-        margin-right: 20px;
+        /* margin-right: 20px; */
     }
 
     
     @media (max-width: 768px) {
-        width: 40px
+        /* width: 40px */
     }
 
     justify-content: center;
     display: flex;
-    margin-bottom: 24px
+    margin-bottom: 24px;
 
 `
 
-export const ContactButton = styled(Button)`
+export const ContactButton = styled.a`
     border-radius: 50%;
+    padding: 12px;
     border: 1px solid #FFFFFF;
 
     :hover{
-        background-color: #8ED0BD;
+        background: #8ED0BD;
         color: #242424
     }
 `
@@ -151,7 +152,18 @@ export const ContactContainer = styled.div`
     }
     margin-top: 32px;
     display: flex;
-    justify-content: center
+    justify-content: center;
+
+    .btn .btn-primary{
+        border-radius: 50%;
+    padding: 12px;
+    border: 1px solid #FFFFFF;
+
+    :hover{
+        background: #8ED0BD;
+        color: #242424
+    }
+    }
     
 `
 

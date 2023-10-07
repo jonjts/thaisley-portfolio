@@ -1,23 +1,21 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next'
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { interfaces  } from "../../../store";
 
 import ContactButtonContainer from '../../../components/container/ContactButton'
 import Card from "../../../components/cards/Image";
 import {
     Container,
-    HeaderContainer,
     CardContainer,
     CardColumn,
     CardRow
 } from './styles';
-import { S1 } from '../../styles'
 
 const Content: React.FC = () => {
 
     const { t } = useTranslation()
-    const history = useHistory()
+    const navigate = useNavigate()
 
 
     const Interfaces = () => (
@@ -32,7 +30,7 @@ const Content: React.FC = () => {
                             imageSorce={item.image}
                             categoria={t(item.categoria)}
                             title={item.title}
-                            onClick={() => { history.push(`/cases?key=${item.id}`) }}
+                            onClick={() => { navigate(`/cases?key=${item.id}`) }}
                         />
                     </CardColumn>
                 ))

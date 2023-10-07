@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react';
 import { useTranslation } from 'react-i18next'
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { Container } from './styles';
 import { Button } from 'react-bootstrap'
@@ -8,11 +8,11 @@ import { Button } from 'react-bootstrap'
 const ContactButton: React.FC<{ className?: string, style?: CSSProperties }> = ({ className, style }) => {
 
     const { t } = useTranslation()
-    const history = useHistory()
+    const navigate = useNavigate()
 
     function handleGoToContact(e: React.MouseEvent) {
         e.preventDefault()
-        history.push('/contact')
+        navigate('/contact')
     }
 
     return (

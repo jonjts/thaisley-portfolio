@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Coompras, Tinbolt, Sara, Imc, BancoOriginal, DrAna } from '../../../store/cases'
 import { ICaseGroup, ICase } from '../../../store/cases/interfaces'
 import {
-    useHistory,
+    useNavigate,
     useLocation
 } from "react-router-dom";
 import { interfaces } from "../../../store";
@@ -48,7 +48,7 @@ function useQuery() {
 const Content: React.FC = () => {
 
     let query = useQuery();
-    const history = useHistory()
+    const navigate = useNavigate()
     const { t, i18n } = useTranslation()
     const [readToo, setReadToo] = useState(new Array<IProject>())
     const [caso, setCase] = useState<undefined | ICase>(undefined)
@@ -60,7 +60,7 @@ const Content: React.FC = () => {
     }, [])
 
     function handleGoBack(e: React.MouseEvent) {
-        history.push('/home')
+        navigate('/home')
     }
 
     function loadNextToRead() {
@@ -85,7 +85,7 @@ const Content: React.FC = () => {
 
     function goToNext(key: string) {
         scrollToTop()
-        history.push(`/cases?key=${key}`)
+        navigate(`/cases?key=${key}`)
         window.location.reload()
     }
 

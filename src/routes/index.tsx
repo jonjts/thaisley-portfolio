@@ -6,32 +6,23 @@ import Cases from "../pages/Case";
 
 import {
     BrowserRouter as Router,
-    Switch,
+    Routes,
     Route,
-    Redirect,
+    Navigate,
 } from "react-router-dom";
+
 
 const routes: React.FC = () => {
     return (
         <Router>
-            <Switch>
-                <Redirect exact from='/' to='/home' />
-                <Route path="/" exact>
-                    <Home />
-                </Route>
-                <Route path="/home" exact>
-                    <Home />
-                </Route>
-                <Route path="/about-me">
-                    < AboutMe />
-                </Route>
-                <Route path="/contact">
-                    < Contact />
-                </Route>
-                <Route path="/cases">
-                    <Cases />
-                </Route>
-            </Switch>
+            <Routes>
+                {/* <Navigate to='/home' /> */}
+                <Route  path="/" element={<Home/>}/>
+                <Route path="/home" element={<Home/>}/>
+                <Route path="/about-me" element={<AboutMe/>}/>
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path="/cases" element={<Cases/>}/>
+            </Routes>
         </Router>
     )
 }

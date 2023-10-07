@@ -33,8 +33,8 @@ const SelectButton: React.FC<ISelectButton> = ({ onInterfacesCliecked = () => { 
                 onChange={handleClick}
                 className="mb-2">
 
-                <ToggleButton value='interface'>{t('label.interface')}</ToggleButton>
-                <ToggleButton value='visual'>{t('label.logo_desing')}</ToggleButton>
+                <ToggleButton id='tg-interface' value='interface'>{t('label.interface')}</ToggleButton>
+                <ToggleButton id='tg-visual' value='visual'>{t('label.logo_desing')}</ToggleButton>
             </ToggleButtonGroup>
         </div>
     );
