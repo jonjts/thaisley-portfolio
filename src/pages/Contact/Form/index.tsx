@@ -72,7 +72,6 @@ ${message}
       setMessage('');
       setEmail('');
     } catch (error) {
-      console.error(error);
       setAlert({
         color: 'danger',
         msg: t('contact.form.error_send'),
@@ -145,6 +144,16 @@ ${message}
       <FormContainer>
         <Quadrado src={quadradoSrc} />
         <Form validated={false}>
+          <Alert
+            className="mt-2"
+            variant={alert.color}
+            onClose={() => setAlert({} as IAlert)}
+            transition
+            show={!!alert.msg}
+            dismissible
+          >
+            <p>{alert.msg}</p>
+          </Alert>
           <Form.Group>
             <Form.Label>{t('contact.form.name')}</Form.Label>
             <Form.Control
@@ -188,16 +197,6 @@ ${message}
               {t('contact.send_email')}
             </SubmitButtom>
           </SubmitContainer>
-          <Alert
-            className="mt-2"
-            variant={alert.color}
-            onClose={() => setAlert({} as IAlert)}
-            transition
-            show={!!alert.msg}
-            dismissible
-          >
-            <p>{alert.msg}</p>
-          </Alert>
         </Form>
         <Quadrado src={quadradoSrc} />
       </FormContainer>
